@@ -2015,8 +2015,7 @@ img {
 
 .contact-form-wrapper {
     background: var(--white);
-    padding: 40px;
-    border-radius: 14px;
+     border-radius: 14px;
     border: 1px solid var(--border);
     box-shadow: 0 15px 45px rgba(36, 35, 33, .06);
 }
@@ -2119,5 +2118,120 @@ img {
 
     .contact-form-heading h3 {
         font-size: 21px;
+    }
+}
+.map-section {
+    padding: 100px 0;
+    background: var(--light);
+    overflow: hidden;
+}
+
+.map-section .section-heading {
+    margin-bottom: 45px;
+}
+
+.map-wrapper {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 15px 45px rgba(36, 35, 33, .07);
+    overflow: hidden;
+}
+
+.map-frame {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 9px;
+    background: #eae6df;
+}
+
+.map-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px 15px 12px;
+}
+
+.map-info-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1e9de;
+    color: var(--primary);
+    border-radius: 9px;
+    font-size: 23px;
+}
+
+.map-info-content {
+    flex: 1;
+}
+
+.map-info-content h4 {
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.map-info-content p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0;
+}
+
+.map-directions {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 22px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.map-directions:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 767px) {
+    .map-section {
+        padding: 70px 0;
+    }
+
+    .map-frame {
+        height: 320px;
+    }
+
+    .map-info {
+        flex-wrap: wrap;
+        padding: 20px 8px 8px;
+    }
+
+    .map-info-content {
+        min-width: 180px;
+    }
+
+    .map-directions {
+        width: 100%;
+        justify-content: center;
     }
 }
